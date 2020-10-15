@@ -12,10 +12,10 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import project1 from "../images/html-css-javascript-lg.jpg";
-import project2 from "../images/javascript-fullstack.jpg";
-import project3 from "../images/react-redux.jpg";
-import project4 from "../images/mern-stack.jpg";
+import project1 from "../images/javascript.png";
+import project2 from "../images/htmlcss.png";
+import project3 from "../images/react1.png";
+import project4 from "../images/mern-stack.png";
 
 
 
@@ -27,7 +27,8 @@ const useStyles = makeStyles({
     cardContainer: {
         maxWidth: 345,
         margin: "3rem",
-        margin: "5rem auto"
+        margin: "5rem auto",
+        background: '#f2f2f2'
     }
 })
 
@@ -57,22 +58,18 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
+                    Used Javascript to render image cards with like buttons.
                   </Typography>
                 </CardContent>
               </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
+                  {/* <Button size="small" color="primary">
                     Share
-                  </Button>
+                  </Button> */}
                   <Button size="small" color="primary">
-                    Live Demo
+                  <a target="_blank" href="https://thinklikeadesigner.github.io/web_project_8">Live Demo</a>
+
+ 
                   </Button>
                 </CardActions>
             </Card>
@@ -96,22 +93,16 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
+                Simple desktop-only static site
                   </Typography>
                 </CardContent>
               </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
+                  {/* <Button size="small" color="primary">
                     Share
-                  </Button>
+                  </Button> */}
                   <Button size="small" color="primary">
-                    Live Demo
+                  <a target="_blank" href="https://thinklikeadesigner.github.io/web_project_1">Live Demo</a>
                   </Button>
                 </CardActions>
             </Card>
@@ -135,23 +126,18 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
+                    Simple UI webpage made with React and Material UI.
                   </Typography>
                 </CardContent>
               </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
+                  {/* <Button size="small" color="primary">
                     Share
-                  </Button>
-                  <Button size="small" color="primary">
-                    Live Demo
-                  </Button>
+                  </Button> */}
+                
+                  
+                    <a target="_blank" href="https://github.com/thinklikeadesigner/portfolio-web">   <Button size="small" color="primary" style={{textDecoration: "none"}}> Live Demo</Button></a>
+               
                 </CardActions>
             </Card>
           </Grid>
@@ -174,22 +160,17 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
-                    lorem30 lorem30 lorem30 lorem30 lorem30 lorem30
+                      Responsive website using CSS Grid, Flexbox, and Media Queries
                   </Typography>
                 </CardContent>
               </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
+                  {/* <Button size="small" color="primary">
+               
                     Share
-                  </Button>
+                  </Button> */}
                   <Button size="small" color="primary">
-                    Live Demo
+                  <a target="_blank" href="https://thinklikeadesigner.github.io/web_project_3">Live Demo</a>
                   </Button>
                 </CardActions>
             </Card>

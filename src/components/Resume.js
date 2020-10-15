@@ -4,12 +4,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import NavBar from "./NavBar.js";
 
-
-
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
-
   },
   timeline: {
     position: "relative",
@@ -39,41 +36,39 @@ const useStyles = makeStyles((theme) => ({
   },
 
   timeLineItem: {
-      padding: "1rem",
-      borderBottom: "2px solid tan",
-      position: "relative",
-      margin: "1rem 3rem 1rem 1rem",
-      clear: "both",
-      "&:after": {
-        content: "''",
-        position: "absolute"  
+    padding: "1rem",
+    borderBottom: "2px solid tan",
+    position: "relative",
+    margin: "1rem 3rem 1rem 1rem",
+    clear: "both",
+    "&:after": {
+      content: "''",
+      position: "absolute",
+    },
+    "&:before": {
+      content: "''",
+      position: "absolute",
+      right: "0.625rem",
+      top: "calc(50% - 5px)",
+      borderStyle: "solid",
+      borderColor: "tomato tomato transparent transparent",
+      borderWidth: "0.625rem",
+      transform: "rotate(45deg)",
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "44%",
+      margin: "1rem",
+      "&:nth-of-type(2n)": {
+        float: "right",
+        margin: "1rem",
+        borderColor: "tan",
       },
-      "&:before": {
-        content: "''",
-        position: "absolute",
-        right: "0.625rem",
-        top: "calc(50% - 5px)",
-        borderStyle: "solid",
-         borderColor: "tomato tomato transparent transparent",
-          borderWidth: "0.625rem",
-          transform: "rotate(45deg)",
+      "&:nth-of-type(2n):before": {
+        right: "auto",
+        left: "-0.625rem",
+        borderColor: "transparent transparent tomato tomato",
       },
-      [theme.breakpoints.up("md")]: {
-          width: "44%",
-          margin: "1rem",
-          "&:nth-of-type(2n)": {
-            float: "right",
-            margin: "1rem",
-            borderColor: "tan",
-          },
-          "&:nth-of-type(2n):before": {
-            right: "auto",
-            left: "-0.625rem",
-            borderColor: "transparent transparent tomato tomato"
-          },
-
-      }
-
+    },
   },
 
   timeLineYear: {
@@ -100,19 +95,17 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
-heading: {
+  heading: {
     color: "tomato",
     padding: "3rem 0",
-    textTransform: "uppercase", 
-},
-subHeading: {
+    textTransform: "uppercase",
+  },
+  subHeading: {
     color: "white",
     padding: "0",
-    textTransform: "uppercase", 
-}
-
+    textTransform: "uppercase",
+  },
 }));
-
 
 const Resume = () => {
   const classes = useStyles();
@@ -124,54 +117,154 @@ const Resume = () => {
           Learning Experience
         </Typography>
         <Box component="div" className={classes.timeline}>
-          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">October 2020</Typography>
+          <Typography
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            variant="h2"
+          >
+            October 2020
+          </Typography>
           <Box component="div" className={classes.timeLineItem}>
-<Typography className={classes.subHeading} variant="h5" align="center">
-Front End Developer
-</Typography>
-<Typography variant="body1" align="center" style={{color: "tomato"}} >
-Sideprjct Accelerator Program
-</Typography>
-<Typography variant="subtitle1" align="center" style={{color: "tan"}} >
-Part of a team of UX designers and PMs aiming to produce an MVP within 6 weeks using agile methods
-</Typography>
+            <Typography
+              className={classes.subHeading}
+              variant="h5"
+              align="center"
+            >
+              Front End Developer
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              SIDE PRJCT Accelerator Program
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "tan" }}
+            >
+              Part of a team of UX designers and product managers to produce an
+              MVP within 6 weeks using agile methods.
+            </Typography>
           </Box>
-          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">September 2020</Typography>
+          <Typography
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            variant="h2"
+          >
+            September 2020
+          </Typography>
           <Box component="div" className={classes.timeLineItem}>
-<Typography className={classes.subHeading} variant="h5" align="center">
-Leadership
-</Typography>
-<Typography variant="body1" align="center" style={{color: "tomato"}} >
-DevUX Projects
-</Typography>
-<Typography variant="subtitle1" align="center" style={{color: "tan"}} >
-Founded a growing community of UX designers and Front End Developers for the purpose of trying to create a DevOps culture relevent for UX
-</Typography>
+            <Typography
+              className={classes.subHeading}
+              variant="h5"
+              align="center"
+            >
+              Co-Founder
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              DevUX Projects
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "tan" }}
+            >
+              Founded a club for student UX designers and Front End
+              Developers. We are actively learning how to work in cross-functional teams and collaborate.
+            </Typography>
           </Box>
-          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">March 2020</Typography>
+          <Typography
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            variant="h2"
+          >
+            July 2020
+          </Typography>
           <Box component="div" className={classes.timeLineItem}>
-<Typography className={classes.subHeading} variant="h5" align="center">
-Student
-</Typography>
-<Typography variant="body1" align="center" style={{color: "tomato"}} >
-Practicum by Yandex, Fullstack Bootcamp
-</Typography>
-<Typography variant="subtitle1" align="center" style={{color: "tan"}} >
-Tech: React, Figma,  Git, Javascript,Slack, Agile Methodology, HTML5, CSS3
-</Typography>
+            <Typography
+              className={classes.subHeading}
+              variant="h5"
+              align="center"
+            >
+              Senior Student
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              Practicum by Yandex
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "tan" }}
+            >
+              Recruited by Practicum to assist tutors in helping students with the course. Produced tutorial videos and participated in weekly meetings to help students succeed.
+            </Typography>
           </Box>
-          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">January 2020</Typography>
+          <Typography
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            variant="h2"
+          >
+            May 2020
+          </Typography>
           <Box component="div" className={classes.timeLineItem}>
-<Typography className={classes.subHeading} variant="h5" align="center">
-Student
-</Typography>
-<Typography variant="body1" align="center" style={{color: "tomato"}} >
-Continuing Education: building side projects
-</Typography>
-<Typography variant="subtitle1" align="center" style={{color: "tan"}} >
-Tech: Python, Docker, AWS, Flutter, Material UI, Trello, Android Studio
-</Typography>
+            <Typography
+              className={classes.subHeading}
+              variant="h5"
+              align="center"
+            >
+              Student
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              Practicum by Yandex, Fullstack Bootcamp
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "tan" }}
+            >
+              Tech: React, Figma, Git, Javascript, Slack, Agile Methodology,
+              HTML5, CSS3
+            </Typography>
           </Box>
+          {/* <Typography
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+            variant="h2"
+          >
+            January 2020
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              className={classes.subHeading}
+              variant="h5"
+              align="center"
+            >
+              Student
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              Continuing Education: building side projects
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "tan" }}
+            >
+              Tech: Python, Docker, AWS, Flutter, Material UI, Android Studio
+            </Typography>
+          </Box> */}
         </Box>
       </Box>
     </>
