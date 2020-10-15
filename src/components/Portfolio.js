@@ -58,7 +58,7 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    Used Javascript to render image cards with like buttons.
+                    Used Javascript to render image cards with like buttons
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -67,7 +67,7 @@ const Portfolio = () => {
                     Share
                   </Button> */}
                   <Button size="small" color="primary">
-                  <a target="_blank" href="https://thinklikeadesigner.github.io/web_project_8">Live Demo</a>
+                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://thinklikeadesigner.github.io/web_project_8">Live Demo</a>
 
  
                   </Button>
@@ -102,7 +102,7 @@ const Portfolio = () => {
                     Share
                   </Button> */}
                   <Button size="small" color="primary">
-                  <a target="_blank" href="https://thinklikeadesigner.github.io/web_project_1">Live Demo</a>
+                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://thinklikeadesigner.github.io/web_project_1">Live Demo</a>
                   </Button>
                 </CardActions>
             </Card>
@@ -126,7 +126,7 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    Simple UI webpage made with React and Material UI.
+                    Simple UI webpage made with React and Material UI
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -136,7 +136,7 @@ const Portfolio = () => {
                   </Button> */}
                 
                   
-                    <a target="_blank" href="https://github.com/thinklikeadesigner/portfolio-web">   <Button size="small" color="primary" style={{textDecoration: "none"}}> Live Demo</Button></a>
+                    <a target="_blank" style={{ textDecoration: 'none' }}href="https://github.com/thinklikeadesigner/portfolio-web">   <Button size="small" color="primary" > Github Source Code</Button></a>
                
                 </CardActions>
             </Card>
@@ -170,7 +170,7 @@ const Portfolio = () => {
                     Share
                   </Button> */}
                   <Button size="small" color="primary">
-                  <a target="_blank" href="https://thinklikeadesigner.github.io/web_project_3">Live Demo</a>
+                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://thinklikeadesigner.github.io/web_project_3">Live Demo</a>
                   </Button>
                 </CardActions>
             </Card>

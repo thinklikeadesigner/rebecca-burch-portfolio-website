@@ -143,8 +143,8 @@ const Resume = () => {
               align="center"
               style={{ color: "tan" }}
             >
-              Part of a team of UX designers and product managers to produce an
-              MVP within 6 weeks using agile methods.
+              Joined a team of UX designers and product managers to produce an
+              MVP within 6 weeks using agile methods
             </Typography>
           </Box>
           <Typography
@@ -174,7 +174,7 @@ const Resume = () => {
               style={{ color: "tan" }}
             >
               Founded a club for student UX designers and Front End
-              Developers. We are actively learning how to work in cross-functional teams and collaborate.
+              Developers
             </Typography>
           </Box>
           <Typography
@@ -203,7 +203,7 @@ const Resume = () => {
               align="center"
               style={{ color: "tan" }}
             >
-              Recruited by Practicum to assist tutors in helping students with the course. Produced tutorial videos and participated in weekly meetings to help students succeed.
+              Recruited by Practicum to assist tutors in helping students with the course
             </Typography>
           </Box>
           <Typography
@@ -232,8 +232,7 @@ const Resume = () => {
               align="center"
               style={{ color: "tan" }}
             >
-              Tech: React, Figma, Git, Javascript, Slack, Agile Methodology,
-              HTML5, CSS3
+              Currently halfway through a 10 month fullstack bootcamp
             </Typography>
           </Box>
           {/* <Typography
