@@ -67,9 +67,9 @@ const menuItems = [
     listPath: "/Portfolio"
   },
   {
-    listIcon: <ContactMail />,
-    listText: "Contacts",
-    listPath: "/contacts"
+    // listIcon: <ContactMail />,
+    // listText: "Contacts",
+    // listPath: "/contacts"
   },
 ];
 
@@ -106,7 +106,7 @@ const sideList = slider => (
     <>
 
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#222" }}>
+        <AppBar position="fixed" style={{ background: "#222" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)} >
               <ArrowBack style={{ color: "tomato" }} />

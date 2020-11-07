@@ -5,9 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import NavBar from "./NavBar.js";
 
 const useStyles = makeStyles((theme) => ({
-  mainContainer: {
-    background: "#233",
-  },
+
   timeline: {
     position: "relative",
     padding: "1rem",
@@ -112,7 +110,7 @@ const Resume = () => {
   return (
     <>
       <NavBar />
-      <Box component="header" className={classes.mainContainer}>
+      <Box component="header" style={{marginTop: "48px"}} className={classes.mainContainer}>
         <Typography className={classes.heading} variant="h4" align="center">
           Learning Experience
         </Typography>

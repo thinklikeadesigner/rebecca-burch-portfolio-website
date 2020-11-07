@@ -26,9 +26,9 @@ const Footer = () => {
     return (
         <BottomNavigation width="auto" style={{background: "#222"}}>
             
-< BottomNavigationAction className={classes.root} style={{padding:0}} icon={<GitHubIcon />} />
-< BottomNavigationAction className={classes.root} style={{padding:0}} icon={<TwitterIcon />} />
-< BottomNavigationAction className={classes.root} style={{padding:0}} icon={<LinkedInIcon />} />
+< BottomNavigationAction className={classes.root} style={{padding:0}} href="https://github.com/thinklikeadesigner/" icon={<GitHubIcon />} />
+< BottomNavigationAction className={classes.root} style={{padding:0}} href="https://twitter.com/thinkLikeADev" icon={<TwitterIcon />} />
+< BottomNavigationAction className={classes.root} style={{padding:0}} href="https://www.linkedin.com/in/rebecca-burch/" icon={<LinkedInIcon />} />
 
 </BottomNavigation>
 
