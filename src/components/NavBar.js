@@ -74,7 +74,7 @@ const menuItems = [
 ];
 
 const NavBar = () => {
-const [state, setstate] = useState({
+const [state, setstate] = useState({  
     right: false
 })
 
