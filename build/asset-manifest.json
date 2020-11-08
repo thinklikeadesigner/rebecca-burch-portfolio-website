@@ -1,18 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.fa5b8dd8.chunk.css",
-    "main.js": "/static/js/main.3d326a82.chunk.js",
-    "main.js.map": "/static/js/main.3d326a82.chunk.js.map",
+    "main.js": "/static/js/main.acc29f05.chunk.js",
+    "main.js.map": "/static/js/main.acc29f05.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.89156b78.js",
     "runtime-main.js.map": "/static/js/runtime-main.89156b78.js.map",
     "static/js/2.d799e496.chunk.js": "/static/js/2.d799e496.chunk.js",
     "static/js/2.d799e496.chunk.js.map": "/static/js/2.d799e496.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c84da68dd2f219036f56f5c1be7ed836.js": "/precache-manifest.c84da68dd2f219036f56f5c1be7ed836.js",
+    "precache-manifest.0d530204540851f80ecc59c1162c2032.js": "/precache-manifest.0d530204540851f80ecc59c1162c2032.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.fa5b8dd8.chunk.css.map": "/static/css/main.fa5b8dd8.chunk.css.map",
     "static/js/2.d799e496.chunk.js.LICENSE.txt": "/static/js/2.d799e496.chunk.js.LICENSE.txt",
-    "static/media/avatar.png": "/static/media/avatar.7c8e5f50.png",
     "static/media/App.css": "/static/media/coffee-apple.2dd213aa.jpg",
     "static/media/htmlcss.png": "/static/media/htmlcss.950b95fc.png",
     "static/media/javascript.png": "/static/media/javascript.f364bdab.png",
@@ -23,6 +22,6 @@
     "static/js/runtime-main.89156b78.js",
     "static/js/2.d799e496.chunk.js",
     "static/css/main.fa5b8dd8.chunk.css",
-    "static/js/main.3d326a82.chunk.js"
+    "static/js/main.acc29f05.chunk.js"
   ]
 }
