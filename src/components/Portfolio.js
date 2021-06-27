@@ -66,7 +66,7 @@ const Portfolio = () => {
                     Share
                   </Button> */}
                   <Button size="small" color="primary">
-                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://thinklikeadesigner.github.io/web_project_9">Live Demo</a>
+                  <a style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer"  href="https://thinklikeadesigner.github.io/wb8historic">Live Demo</a>
 
  
                   </Button>         <Button size="small" color="primary">
@@ -105,9 +105,7 @@ const Portfolio = () => {
                     Share
                   </Button> */}
                   <Button size="small" color="primary">
-                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://thinklikeadesigner.github.io/web_project_1">Live Demo</a>
-                  </Button> <Button size="small" color="primary">
-                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://github.com/thinklikeadesigner/web_project_1">Source Code</a>
+                  <a style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" href="https://thinklikeadesigner.github.io/web_project_1">Live Demo</a>
                   </Button>
                 </CardActions>
             </Card>
@@ -141,7 +139,8 @@ const Portfolio = () => {
                   </Button> */}
                 
                   
-                    <a target="_blank" style={{ textDecoration: 'none' }}href="https://thinklikeadesigner.github.io/portfolio-web/">   <Button size="small" color="primary" > Live Demo</Button></a>                     <a target="_blank" style={{ textDecoration: 'none' }}href="https://github.com/thinklikeadesigner/portfolio-web">   <Button size="small" color="primary" > Source Code</Button></a>
+                    <a target="_blank" style={{ textDecoration: 'none' }}href="https://thinklikeadesigner.github.io/portfolio-web/">   <Button size="small" color="primary" > Live Demo</Button></a>                
+                         <a target="_blank" style={{ textDecoration: 'none' }}href="https://github.com/thinklikeadesigner/portfolio-web">   <Button size="small" color="primary" > Source Code</Button></a>
                
                 </CardActions>
             </Card>
@@ -175,7 +174,7 @@ const Portfolio = () => {
                     Share
                   </Button> */}
                   <Button size="small" color="primary">
-                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://thinklikeadesigner.github.io/web_project_3">Live Demo</a>
+                  <a style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" href="https://thinklikeadesigner.github.io/web_project_3">Live Demo</a>
                   </Button>
                   <Button size="small" color="primary">
                   <a style={{ textDecoration: 'none' }} target="_blank" href="https://github.com/thinklikeadesigner/web_project_3">Source Code</a>
