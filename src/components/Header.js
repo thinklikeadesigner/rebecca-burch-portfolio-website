@@ -2,6 +2,7 @@ import React from "react";
 import { Typography, Avatar, Grid, Box } from "@material-ui/core";
 import avatar from "../avatar.png";
 import Typed from "react-typed";
+import Footer from "./Footer";
 import { makeStyles } from "@material-ui/core/styles";
 
 // CSS styles
@@ -33,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const classes = useStyles();
   return (
+    <>
     <Box className={classes.typedContainer}>
         <Grid container justify="center">
       <Avatar className={classes.avatar} src={avatar} alt="Rebecca Burch" />
@@ -50,6 +52,7 @@ const Header = () => {
         />
       </Typography>
     </Box>
+    </>
   );
 };
 

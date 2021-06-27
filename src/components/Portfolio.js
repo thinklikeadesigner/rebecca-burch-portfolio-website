@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import NavBar from "./NavBar";
+import NavMenu from "./Menu";
 import {
   Box,
   Grid,
@@ -33,6 +34,7 @@ const Portfolio = () => {
     const classes = useStyles();
   return (
     <>
+    <NavMenu />
       <Box component="div" className={classes.mainContainer} >
         <NavBar />
         <Grid container justify="center" alignItems="center">
@@ -65,6 +67,10 @@ const Portfolio = () => {
                   </Button> */}
                   <Button size="small" color="primary">
                   <a style={{ textDecoration: 'none' }} target="_blank" href="https://thinklikeadesigner.github.io/web_project_9">Live Demo</a>
+
+ 
+                  </Button>         <Button size="small" color="primary">
+                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://github.com/thinklikeadesigner/web_project_9">Source Code</a>
 
  
                   </Button>
@@ -100,6 +106,8 @@ const Portfolio = () => {
                   </Button> */}
                   <Button size="small" color="primary">
                   <a style={{ textDecoration: 'none' }} target="_blank" href="https://thinklikeadesigner.github.io/web_project_1">Live Demo</a>
+                  </Button> <Button size="small" color="primary">
+                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://github.com/thinklikeadesigner/web_project_1">Source Code</a>
                   </Button>
                 </CardActions>
             </Card>
@@ -133,7 +141,7 @@ const Portfolio = () => {
                   </Button> */}
                 
                   
-                    <a target="_blank" style={{ textDecoration: 'none' }}href="https://github.com/thinklikeadesigner/portfolio-web">   <Button size="small" color="primary" > Github Source Code</Button></a>
+                    <a target="_blank" style={{ textDecoration: 'none' }}href="https://thinklikeadesigner.github.io/portfolio-web/">   <Button size="small" color="primary" > Live Demo</Button></a>                     <a target="_blank" style={{ textDecoration: 'none' }}href="https://github.com/thinklikeadesigner/portfolio-web">   <Button size="small" color="primary" > Source Code</Button></a>
                
                 </CardActions>
             </Card>
@@ -168,6 +176,9 @@ const Portfolio = () => {
                   </Button> */}
                   <Button size="small" color="primary">
                   <a style={{ textDecoration: 'none' }} target="_blank" href="https://thinklikeadesigner.github.io/web_project_3">Live Demo</a>
+                  </Button>
+                  <Button size="small" color="primary">
+                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://github.com/thinklikeadesigner/web_project_3">Source Code</a>
                   </Button>
                 </CardActions>
             </Card>

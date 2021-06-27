@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import MobileRightMenuSlide from "@material-ui/core/Drawer";
-import { makeStyles } from "@material-ui/core/styles";
+import { createMuiTheme, makeStyles } from "@material-ui/core/styles";
 import Footer from "./Footer"
 import {
   AppBar,
@@ -15,7 +15,7 @@ import {
   Typography,
   Box,
   ListItemIcon,
-  Drawer
+  Drawer, Grid
 } from "@material-ui/core";
 
 import {
@@ -25,17 +25,59 @@ import {
   Apps,
   ContactMail,
   Block,
+  Fingerprint,
+  Navigation,
+  Menu,
 } from "@material-ui/icons";
 
 
 import avatar from "../avatar.png";
+const mediaQuery = createMuiTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
+})
 
 //CSS styles
 const useStyles = makeStyles((theme) => ({
+  header: {
+    // [theme.breakpoints.down('sm')]: {
+    //   height: "56px",
+    // },
+    [theme.breakpoints.up('md')]: {
+      visibility: "hidden",
+    },
+    // [theme.breakpoints.up('lg')]: {
+    //   height: "80px",
+    // },
+  },
+  headerContainer: {
+    alignItems: "center",
+    justifyContent: "space-between"
+    // [theme.breakpoints.down('sm')]: {
+    //   height: "56px",
+    // },
+    // [theme.breakpoints.up('md')]: {
+    //   height: "66px",
+    // },
+    // [theme.breakpoints.up('lg')]: {
+    //   height: "80px",
+    // },
+
+  },
   menuSliderContainer: {
     width: 250,
     background: "#511",
     height: "100%",
+    
+    
+
   },
   avatar: {
     display: "block",
@@ -73,7 +115,15 @@ const menuItems = [
   },
 ];
 
+
+
+
 const NavBar = () => {
+
+
+
+
+
 const [state, setstate] = useState({  
     right: false
 })
@@ -84,9 +134,14 @@ const toggleSlider = (slider, open) => () => {
   const classes = useStyles();
 const sideList = slider => (
 
-      <Box className={classes.menuSliderContainer} component="div"
+      <Box 
+       className={classes.menuSliderContainer} component="div"
       onClick={toggleSlider(slider, false)}>
-        <Avatar className={classes.avatar} src={avatar} alt="Rebecca Burch " />
+          <div style={{padding: "0px 24px", display: "flex", justifyContent: "flex-end",alignItems: "center", minHeight: "64px"}}>
+       
+          <Menu style={{ color: "tan", margin: "12px" }} />
+          </div>
+        {/* <Avatar className={classes.avatar} src={avatar} alt="Rebecca Burch " /> */}
         <Divider />
         <List>
           {menuItems.map((lsItem, key) => (
@@ -98,25 +153,30 @@ const sideList = slider => (
             </ListItem>
           ))}
         </List>
+        
       </Box>
 
 )
 
   return (
     <>
-
-      <Box component="nav">
-        <AppBar position="fixed" style={{ background: "#222" }}>
-          <Toolbar>
-            <IconButton onClick={toggleSlider("right", true)} >
-              <ArrowBack style={{ color: "tomato" }} />
-            </IconButton>
+ <Grid xs={120} sm={6} md={3}>
+  
+</Grid>
+      <Box  component="nav">
+        
+        <AppBar  className={classes.header}  position="fixed" style={{ background: "#222" }}>
+          <Toolbar  className={classes.headerContainer} >
             <Typography variant="h5" style={{ color: "tan" }}>
               Portfolio
             </Typography>
+            <IconButton onClick={toggleSlider("right", true)} >
+              <Menu style={{ color: "tomato" }} />
+            </IconButton>
             <MobileRightMenuSlide anchor="right" onClose={toggleSlider("right", false)} open={state.right}>
 {sideList("right")}
-<Footer />
+        <Footer />
+
             </MobileRightMenuSlide>
           </Toolbar>
         </AppBar>

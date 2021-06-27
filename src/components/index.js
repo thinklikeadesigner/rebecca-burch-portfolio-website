@@ -1,13 +1,14 @@
-import React from "react";
-import NavBar from "./NavBar";
-import Header from "./Header";
-import Particles from "react-particles-js";
-import { makeStyles } from "@material-ui/styles";
+import React from 'react';
+import NavBar from './NavBar';
+import Header from './Header';
+import NavMenu from './Menu';
+import Particles from 'react-particles-js';
+import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
   particlesCanva: {
-    position: "absolute",
-    opacity: "0.3",
+    position: 'absolute',
+    opacity: '0.3',
   },
 });
 
@@ -17,6 +18,7 @@ const Home = () => {
   return (
     <div>
       <NavBar></NavBar>
+      <NavMenu />
       <Particles
         canvasClassName={classes.particlesCanva}
         params={{
@@ -29,10 +31,10 @@ const Home = () => {
               },
             },
             shape: {
-              type: "circle",
+              type: 'circle',
               stroke: {
                 width: 1,
-                color: "tomato",
+                color: 'tomato',
               },
             },
             size: {
@@ -58,6 +60,7 @@ const Home = () => {
           },
         }}
       ></Particles>
+
       <Header />
     </div>
   );
