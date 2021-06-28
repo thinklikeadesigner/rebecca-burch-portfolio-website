@@ -104,8 +104,8 @@ const mediaQuery = createMuiTheme({
     },
     {
       listIcon: <AssignmentInd />,
-      listText: "Resume",
-      listPath: "/Resume"
+      listText: "About",
+      listPath: "/About"
     },
     {
       listIcon: <Apps />,

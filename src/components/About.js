@@ -1,11 +1,24 @@
 import React from "react";
 import { Typography, Box, Avatar } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, createMuiTheme } from "@material-ui/core/styles";
 import Footer from "./Footer";
 import NavMenu from "./Menu";
 import NavBar from "./NavBar.js";
 import { FullscreenExitRounded } from '@material-ui/icons';
 import avatar from "../images/react.png";
+
+const mediaQuery = createMuiTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
+})
+
 
 const useStyles = makeStyles((theme) => ({
 
@@ -33,8 +46,13 @@ const useStyles = makeStyles((theme) => ({
 
   },
   avatar: {
-    height: "464px",
-    width: "464px",
+    [theme.breakpoints.up('md')]: {
+      height: "176px",
+    },
+    [theme.breakpoints.up('md')]: {
+      height: "243px",
+    },
+  
   },
   timeLineYear: {
   },
@@ -54,7 +72,7 @@ lineHeight: "60px",
   },
 }));
 
-const Resume = () => {
+const About = () => {
   const classes = useStyles();
   return (
     <>
@@ -80,4 +98,4 @@ Design Technologist</Typography>
   );
 };
 
-export default Resume;
+export default About;

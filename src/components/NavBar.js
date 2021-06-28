@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 
   },
   menuSliderContainer: {
-    width: 250,
+    width: "100vw",
     background: "#511",
     height: "100%",
     
@@ -89,7 +89,17 @@ const useStyles = makeStyles((theme) => ({
   listItem: {
     color: "tan",
   },
-  listText: "tan"
+
+// root: {
+//   "& .MuiListItemText-primary": {
+//     fontWeight: "400",
+//   fontSize: "31px",
+//   lineHeight: "43px",
+//     },
+// },
+
+  listText: "tan",
+
 }));
 
 const menuItems = [
@@ -100,8 +110,8 @@ const menuItems = [
   },
   {
     listIcon: <AssignmentInd />,
-    listText: "Resume",
-    listPath: "/Resume"
+    listText: "About",
+    listPath: "/About"
   },
   {
     listIcon: <Apps />,
