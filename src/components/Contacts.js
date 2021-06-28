@@ -3,6 +3,9 @@ import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import NavBar from "./NavBar.js";
+import NavMenu from "./Menu.js";
+import { GitHub, SportsBasketball, Twitter } from '@material-ui/icons';
+import LinkedIn from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -10,11 +13,14 @@ const useStyles = makeStyles((theme) => ({
     left: "50%",
     transform: "translate(-50%, -50%)",
     position: "absolute",
+    justifyContent: "center"
   },
   button: {
+
     marginTop: "1rem",
     color: "tomato",
     borderColor: "tomato",
+    alignSelf: "center"
   },
 }));
 
@@ -42,22 +48,25 @@ const InputField = withStyles({
 
 const Contacts = () => {
   const classes = useStyles();
-
+  
   return (
-    <Box component="div" style={{ background: "#233", height: "100vh" }}> <NavBar />
+    <Box component="div" style={{ background: "linear-gradient(to bottom, #233, 75%, #000)", height: "100vh" }}> 
+    <NavMenu/>
+    <NavBar />
       <Grid container justify="center">
         <Box component="form" className={classes.form}>
           <Typography
-            variant="h5"
+            variant="h3"
             style={{
               color: "tomato",
               textAlign: "center",
-              textTransform: "uppercase",
+           
             }}
           >
-            hire or contact me
+         
+         Reach Out or Keep Exploring
           </Typography>
-          <InputField
+          {/* <InputField
             fullWidth={true}
             label="Name"
             variant="outlined"
@@ -68,9 +77,9 @@ const Contacts = () => {
                 color: "white",
               },
             }}
-          />
+          /> */}
           <br />
-          <InputField
+          {/* <InputField
             fullWidth={true}
             label="Email"
             variant="outlined"
@@ -81,9 +90,51 @@ const Contacts = () => {
                 color: "white",
               },
             }}
-          />
+          /> */}
+      <a  style={{textDecoration: "none"}} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rebecca-burch/">
+                    <Button
+            className={classes.button}
+            variant="outlined"
+            fullWidth={true}
+            endIcon={<LinkedIn />}
+
+
+            > LinkedIn
+            </Button>
+            </a>
+            <a style={{textDecoration: "none"}} target="_blank" rel="noopener noreferrer" href="https://github.com/thinklikeadesigner/">
+                    <Button
+            className={classes.button}
+            variant="outlined"
+            fullWidth={true}
+            endIcon={<GitHub />}
+          >
+   Github
+          </Button>
+   </a>
+   <a style={{textDecoration: "none"}} target="_blank" rel="noopener noreferrer" href="https://twitter.com/thinkLikeADev">
+                    <Button
+            className={classes.button}
+            variant="outlined"
+            fullWidth={true}
+            endIcon={<Twitter />}
+          >
+          Twitter
+          </Button>
+          </a>
+          <a style={{textDecoration: "none"}} target="_blank" rel="noopener noreferrer" href="https://dribbble.com/ThinkLikeADesigner">
+                    <Button
+            className={classes.button}
+            variant="outlined"
+            fullWidth={true}
+            endIcon={<SportsBasketball />}
+            
+          >
+     Dribble
+          </Button>
+     </a>
           <br />
-          <InputField
+          {/* <InputField
             fullWidth={true}
             label="Company Name"
             variant="outlined"
@@ -94,15 +145,9 @@ const Contacts = () => {
                 color: "white",
               },
             }}
-          />
-          <Button
-            className={classes.button}
-            variant="outlined"
-            fullWidth={true}
-            endIcon={<SendIcon />}
-          >
-            contact me
-          </Button>
+          /> */}
+
+
         </Box>
       </Grid>
     </Box>

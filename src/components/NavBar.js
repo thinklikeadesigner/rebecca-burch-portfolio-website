@@ -24,10 +24,13 @@ import {
   Home,
   Apps,
   ContactMail,
-  Block,
+  Book,
   Fingerprint,
   Navigation,
   Menu,
+  Info,
+  Report,
+  Description,
 } from "@material-ui/icons";
 
 
@@ -108,20 +111,25 @@ const menuItems = [
     listText: "Home",
     listPath: "/"
   },
-  {
-    listIcon: <AssignmentInd />,
-    listText: "About",
-    listPath: "/About"
-  },
+  // {
+  //   listIcon: <AssignmentInd />,
+  //   listText: "About",
+  //   listPath: "/About"
+  // },
   {
     listIcon: <Apps />,
     listText: "Portfolio",
     listPath: "/Portfolio"
   },
+  // {
+  //   listIcon: <Description />,
+  //   listText: "Resume",
+  //   listPath: "/Resume"
+  // },
   {
-    // listIcon: <ContactMail />,
-    // listText: "Contacts",
-    // listPath: "/contacts"
+    listIcon: <ContactMail />,
+    listText: "Say Hi! 👋",
+    listPath: "/contacts"
   },
 ];
 
@@ -196,3 +204,5 @@ const sideList = slider => (
 };
 
 export default NavBar;
+
+

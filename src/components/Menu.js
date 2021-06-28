@@ -102,20 +102,25 @@ const mediaQuery = createMuiTheme({
       listText: "Home",
       listPath: "/"
     },
-    {
-      listIcon: <AssignmentInd />,
-      listText: "About",
-      listPath: "/About"
-    },
+    // {
+    //   listIcon: <AssignmentInd />,
+    //   listText: "About",
+    //   listPath: "/About"
+    // },
     {
       listIcon: <Apps />,
-      listText: "Portfolio",
+      listText: "Projects",
       listPath: "/Portfolio"
     },
+    // {
+    //   listIcon: <Apps />,
+    //   listText: "Resume",
+    //   listPath: "/Resume"
+    // },
     {
-      // listIcon: <ContactMail />,
-      // listText: "Contacts",
-      // listPath: "/contacts"
+      listIcon: <ContactMail />,
+      listText: "Say Hi! 👋",
+      listPath: "/contacts"
     },
   ];
   

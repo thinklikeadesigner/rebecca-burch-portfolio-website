@@ -35,7 +35,7 @@ const Portfolio = () => {
   return (
     <>
     <NavMenu />
-      <Box component="div" className={classes.mainContainer} >
+      <Box component="div" style={{ background: "linear-gradient(to bottom, #233, 75%, #000)", height: "100%", padding: "64px 0px" }} className={classes.mainContainer} >
         <NavBar />
         <Grid container justify="center" alignItems="center">
           {/* Project 1 */}
@@ -65,12 +65,12 @@ const Portfolio = () => {
                   {/* <Button size="small" color="primary">
                     Share
                   </Button> */}
-                  <Button size="small" color="primary">
-                  <a style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer"  href="https://thinklikeadesigner.github.io/wb8historic">Live Demo</a>
+                  <Button size="small" color="black">
+                  <a style={{ textDecoration: 'none', color: "black", fontWeight: "600" }} target="_blank" rel="noopener noreferrer"  href="https://thinklikeadesigner.github.io/wb8historic">Live Demo</a>
 
  
-                  </Button>         <Button size="small" color="primary">
-                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://github.com/thinklikeadesigner/web_project_9">Source Code</a>
+                  </Button>         <Button size="small" color="black">
+                  <a style={{ textDecoration: 'none', color: "black", fontWeight: "600" }}  target="_blank" href="https://github.com/thinklikeadesigner/web_project_9">Source Code</a>
 
  
                   </Button>
@@ -105,7 +105,11 @@ const Portfolio = () => {
                     Share
                   </Button> */}
                   <Button size="small" color="primary">
-                  <a style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" href="https://thinklikeadesigner.github.io/web_project_1">Live Demo</a>
+                  <a style={{ textDecoration: 'none', color: "black", fontWeight: "600" }} target="_blank" rel="noopener noreferrer" href="https://thinklikeadesigner.github.io/web_project_1">Live Demo</a>
+                  </Button>
+                  <Button size="small" color="primary">
+
+                  <a style={{ textDecoration: 'none', color: "black", fontWeight: "600" }} target="_blank" rel="noopener noreferrer" href="https://github.com/thinklikeadesigner/web_project_1">Source Code</a>
                   </Button>
                 </CardActions>
             </Card>
@@ -139,8 +143,8 @@ const Portfolio = () => {
                   </Button> */}
                 
                   
-                    <a target="_blank" style={{ textDecoration: 'none' }}href="https://thinklikeadesigner.github.io/portfolio-web/">   <Button size="small" color="primary" > Live Demo</Button></a>                
-                         <a target="_blank" style={{ textDecoration: 'none' }}href="https://github.com/thinklikeadesigner/portfolio-web">   <Button size="small" color="primary" > Source Code</Button></a>
+                    <a target="_blank" style={{ textDecoration: 'none', fontWeight: "600" }}href="https://thinklikeadesigner.github.io/portfolio-web/">   <Button size="small" color="black" style={{ textDecoration: 'none', fontWeight: "600" }}> Live Demo</Button></a>                
+                         <a target="_blank" style={{ textDecoration: 'none', fontWeight: "600" }}href="https://github.com/thinklikeadesigner/portfolio-web">   <Button size="small" color="black" style={{ textDecoration: 'none', fontWeight: "600" }}> Source Code</Button></a>
                
                 </CardActions>
             </Card>
@@ -174,10 +178,10 @@ const Portfolio = () => {
                     Share
                   </Button> */}
                   <Button size="small" color="primary">
-                  <a style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" href="https://thinklikeadesigner.github.io/web_project_3">Live Demo</a>
+                  <a style={{ textDecoration: 'none', color: "black", fontWeight: "600" }}  target="_blank" rel="noopener noreferrer" href="https://thinklikeadesigner.github.io/web_project_3">Live Demo</a>
                   </Button>
                   <Button size="small" color="primary">
-                  <a style={{ textDecoration: 'none' }} target="_blank" href="https://github.com/thinklikeadesigner/web_project_3">Source Code</a>
+                  <a style={{ textDecoration: 'none', color: "black", fontWeight: "600" }}  target="_blank" href="https://github.com/thinklikeadesigner/web_project_3">Source Code</a>
                   </Button>
                 </CardActions>
             </Card>
